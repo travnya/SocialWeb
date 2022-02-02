@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from '../components/App/App';","map":{"version":3,"sources":["C:/Users/vsamsonov/Desktop/social-web-hooks-next/src/pages/index.tsx"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,uBAAxB","sourcesContent":["export { default } from '../components/App/App'"]},"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"const Home = () => {};\n\nexport default Home;","map":{"version":3,"sources":["C:/Users/vsamsonov/Desktop/SocialWeb/src/pages/index.tsx"],"names":["Home"],"mappings":"AAAA,MAAMA,IAAI,GAAG,MAAmB,CAC7B,CADH;;AAGE,eAAeA,IAAf","sourcesContent":["const Home = (): JSX.Element => {\r\n  }\r\n  \r\n  export default Home"]},"metadata":{},"sourceType":"module"}
