@@ -1,30 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AddPostForm from "./AddPostForm";
 import { DeleteButton, Item, ItemImage, PostWrapper } from "./Posts.styles";
 
 const Posts = () => {
 
-    let maxID = 0
-    
-    const createPost = (label : string) => {
+    const [id, setId] = useState<number>(0)
+
+    const createPost = (label: string, id: number) => {
         return {
             Author: 'Владислав Самсонов',
             Message: label,
             Avatar: 'https://d2zia2w5autnlg.cloudfront.net/46235/5ec33ee77313a-large',
-            id: maxID++
+            id: id
         }
     }
 
     const [posts, setPost] = useState([
-        createPost('Проверка 1'),
-        createPost('Проверка 2'),
-        createPost('Проверка 3')
+        createPost('Я тут новенький)', 0)
     ])
 
     const addPost = (text: string) => {
-        const newPost = createPost(text)
-        const newArray = [...posts, newPost]
-        setPost(newArray)
+        if (text !== ''){
+            const newPost = createPost(text, id + 1)
+            const newArray = [...posts, newPost]
+            setId(id + 1)
+            setPost(newArray)
+        }
     }
 
     const deletePost = (id: number) => {
@@ -33,20 +34,19 @@ const Posts = () => {
 
     return (
         <PostWrapper >
-            <AddPostForm addPost={addPost}/>
+            <AddPostForm addPost={addPost} />
             {posts.map((userPost) => (
                 <Item key={userPost.id}>
-                    <ItemImage src={userPost.Avatar} alt='Фотография профиля'/>
+                    <ItemImage src={userPost.Avatar} alt='Фотография профиля' />
                     <h5>{userPost.Author}</h5>
                     <p>{userPost.Message}</p>
-                    <DeleteButton 
+                    <DeleteButton
                         type='button'
                         className="btn btn-outline-danger"
                         title="Удалить пост"
-                        onClick={() => deletePost(userPost.id)}/>
+                        onClick={() => deletePost(userPost.id)} />
                 </Item>
             ))}
-            <button onClick={() => console.log(posts, maxID)}>Проверка</button>
         </PostWrapper>
     )
 }

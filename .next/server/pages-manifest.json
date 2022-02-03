@@ -2,5 +2,11 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/profile": "pages/profile.js"
+  "/feed": "pages/feed.js",
+  "/friends": "pages/friends.js",
+  "/profile": "pages/profile.js",
+  "/music": "pages/music.js",
+  "/messages": "pages/messages.js",
+  "/videos": "pages/videos.js",
+  "/settings": "pages/settings.js"
 }

@@ -1,12 +1,12 @@
 import Content from "./Content/Content"
 import FriendsShort from "./FriendsShort/FriendsShort"
 import Posts from "./Posts/Posts"
-import { PostWrapper, ProfileInformation, ProfileWrapper } from "./Profile.styles"
+import { PostWrapper, ProfileInformation } from "./Profile.styles"
 
 
 const Profile = () => {
     return (
-        <ProfileWrapper>
+        <div>
             <ProfileInformation>
                 <Content />
                 <FriendsShort />
@@ -15,7 +15,7 @@ const Profile = () => {
             <PostWrapper>
                 <Posts />
             </PostWrapper>
-        </ProfileWrapper>
+        </div>
     )
 }
 

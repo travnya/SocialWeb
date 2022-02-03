@@ -18,7 +18,7 @@ export const Item = styled.div`
     border-radius: 3px;
     display: grid;
     justify-content: center;
-    grid-template-columns: 3em 1ft 1em;
+    grid-template-columns: 3em 1fr 1em;
     grid-template-rows: 3em 1fr;
     grid-gap: .5em;
     padding: .5em .5em 0 .5em;
@@ -42,11 +42,11 @@ export const PostInput = styled.input `
 `
 
 export const DeleteButton = styled.button`
-    grid-row: 1/3;
+    grid-row: 1;
     grid-column: 3;
     position: relative;
     width: 100%;
-    left: .7em;
+    right: .4em;
     height: 1.6em;
     bottom: .2em;
 `
