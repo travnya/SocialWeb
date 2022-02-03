@@ -1,8 +1,21 @@
-const Profile = ():JSX.Element => {
+import Content from "./Content/Content"
+import FriendsShort from "./FriendsShort/FriendsShort"
+import Posts from "./Posts/Posts"
+import { PostWrapper, ProfileInformation, ProfileWrapper } from "./Profile.styles"
+
+
+const Profile = () => {
     return (
-        <div>
-            Profile
-        </div>
+        <ProfileWrapper>
+            <ProfileInformation>
+                <Content />
+                <FriendsShort />
+            </ProfileInformation>
+
+            <PostWrapper>
+                <Posts />
+            </PostWrapper>
+        </ProfileWrapper>
     )
 }
 

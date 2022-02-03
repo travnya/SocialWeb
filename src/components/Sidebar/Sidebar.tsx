@@ -10,7 +10,7 @@ const Sidebar = ():JSX.Element => {
                 <NavLink href='/messages'><MenuButton className='btn btn-outline-light btn-1'>Сообщения</MenuButton></NavLink>
                 <NavLink href='/music'><MenuButton className='btn btn-outline-light btn-1'>Музыка</MenuButton></NavLink>
                 <NavLink href='/videos'><MenuButton className='btn btn-outline-light btn-1'>Видеозаписи</MenuButton></NavLink>
-                <NavLink href='/setting'><MenuButton className='btn btn-outline-light btn-1'>Настройки</MenuButton></NavLink>
+                <NavLink href='/settings'><MenuButton className='btn btn-outline-light btn-1'>Настройки</MenuButton></NavLink>
             </NavMenu>
         </SidebarWrapper>
     )

@@ -4,6 +4,7 @@ import { AppProps } from 'next/dist/next-server/lib/router/router'
 import React from 'react'
 import Head from 'next/head'
 import Sidebar from '../components/Sidebar/Sidebar'
+import Header from '../components/Header/Header'
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
@@ -14,6 +15,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
       </Head>
 
       <Sidebar />
+      <Header />
       <div className='content-wrapper'>
         <Component {...pageProps} />
       </div>

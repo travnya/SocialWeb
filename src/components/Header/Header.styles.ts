@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 export const MainWrapper = styled.div`
     border: 1px solid white;
@@ -18,4 +18,5 @@ export const Link = styled.a`
     :hover {
         color: inherit;
     }
+    margin-left: 12%;
 `
