@@ -1,15 +1,20 @@
 import styled from "@emotion/styled";
 
 export const ProfileInformation = styled.div`
-    display: inline-flex;
-    width: 100%;
+    display: flex;
+    width: 55em;
     justify-content: space-between;
+    padding: 0 3em 0 3em;
 `
 
 export const PostWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    width: 28em;
+    width: 22em;
     margin-top: 2em;
-    align-items: center;
+`
+
+export const ShortModules = styled.div `
+    display: flex;
+    flex-direction: column;
 `

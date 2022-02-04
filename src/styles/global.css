@@ -1,6 +1,6 @@
 .main-wrapper {
     display: grid;
-    width: 80%;
+    width: 70%;
     grid-template-columns: 8em 1fr;
     grid-template-rows: 55px 1fr;
     grid-gap: 1em;
@@ -12,6 +12,6 @@
     grid-row: 2;
     grid-column: 2;
     border-radius: .5em;
-    box-shadow: 2px 2px 10px azure;
-    padding: 1em;
+    box-shadow: 0 0 5px azure;
+    padding: .75em;
 }

@@ -24,26 +24,6 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/feed": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/feed.js"
-    ],
-    "/friends": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/friends.js"
-    ],
-    "/messages": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/messages.js"
-    ],
-    "/music": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/music.js"
-    ],
     "/profile": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
@@ -53,11 +33,6 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/settings.js"
-    ],
-    "/videos": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/videos.js"
     ]
   },
   "ampFirstPages": []

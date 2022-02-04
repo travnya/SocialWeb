@@ -14,7 +14,7 @@ export const PostWrapper = styled.div `
 
 export const Item = styled.div`
     margin: .5em auto 0 auto;
-    box-shadow: 0 0 3px whitesmoke;
+    box-shadow: -2px 2px 10px #181818;
     border-radius: 3px;
     display: grid;
     justify-content: center;
@@ -49,4 +49,8 @@ export const DeleteButton = styled.button`
     right: .4em;
     height: 1.6em;
     bottom: .2em;
+`
+
+export const AddButton = styled.button`
+    background-color: #282828;
 `

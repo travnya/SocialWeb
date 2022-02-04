@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { PostInput } from "./Posts.styles";
+import { AddButton, PostInput } from "./Posts.styles";
 
 const AddPostForm = (props: any) => {
     const [label, setLabel] = useState('')
@@ -24,12 +24,12 @@ const AddPostForm = (props: any) => {
                 type='text'
                 placeholder="Как ваши дела?"
                 value={label}/>
-            <button 
+            <AddButton 
                 className="btn btn-secondary my-2 my-sm-0"
                 type="submit"
                 onClick={onSubmit}>
                 Добавить
-            </button>
+            </AddButton>
         </form>
     )
 }

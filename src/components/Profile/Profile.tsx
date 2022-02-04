@@ -1,7 +1,8 @@
 import Content from "./Content/Content"
 import FriendsShort from "./FriendsShort/FriendsShort"
+import MusicShort from "./MusicShort/MusicShort"
 import Posts from "./Posts/Posts"
-import { PostWrapper, ProfileInformation } from "./Profile.styles"
+import { PostWrapper, ProfileInformation, ShortModules } from "./Profile.styles"
 
 
 const Profile = () => {
@@ -9,7 +10,10 @@ const Profile = () => {
         <div>
             <ProfileInformation>
                 <Content />
-                <FriendsShort />
+                <ShortModules >
+                    <FriendsShort />
+                    <MusicShort/>
+                </ShortModules>
             </ProfileInformation>
 
             <PostWrapper>

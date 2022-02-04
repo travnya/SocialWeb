@@ -4,11 +4,12 @@ export const FriendsWrapper = styled.div`
     grid-row: 1;
     grid-column: 1;
     border-radius: .5em;
-    box-shadow: 0 0 .35em azure;
-    width: 30em;
+    box-shadow: -2px 2px .35em #181818;
+    width: 25em;
     h1 {
         font-size: 2em;
         text-align: center;
-        margin-top: 1em;
+        margin-top: 1.5%;
     }
+    height: fit-content;
 `
