@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const ProfileInformation = styled.div`
     display: flex;
-    width: 55em;
+    width: 100%;
     justify-content: space-between;
     padding: 0 3em 0 3em;
 `

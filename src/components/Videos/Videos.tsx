@@ -1,7 +1,7 @@
 const Videos = () => {
     return (
         <div>
-            <h1>Videos</h1>
+            <h1>В разработке...</h1>
         </div>
     )
 }

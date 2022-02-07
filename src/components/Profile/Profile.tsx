@@ -7,19 +7,19 @@ import { PostWrapper, ProfileInformation, ShortModules } from "./Profile.styles"
 
 const Profile = () => {
     return (
-        <div>
+        <>
             <ProfileInformation>
                 <Content />
                 <ShortModules >
                     <FriendsShort />
                     <MusicShort/>
+                    <PostWrapper>
+                        <Posts />
+                    </PostWrapper>
                 </ShortModules>
             </ProfileInformation>
 
-            <PostWrapper>
-                <Posts />
-            </PostWrapper>
-        </div>
+        </>
     )
 }
 

@@ -12,6 +12,7 @@ export const ContentWrapper = styled.div `
     padding: 1.5em;
     text-align: center;
     border-radius: .5em;
+    height: fit-content;
 `
 
 export const ProfileImage = styled.img`

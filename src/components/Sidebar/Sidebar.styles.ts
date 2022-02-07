@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 
 export const SidebarWrapper = styled.div `
+    margin-left: .5em;
     grid-row: 2;
     grid-column: 1/2;
     text-align: center;
