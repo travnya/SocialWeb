@@ -8,7 +8,7 @@ export const ContentWrapper = styled.div `
         margin: .5em 0 0 0;
     };
     display: table-column;
-    box-shadow: -2px 2px 10px #181818;
+    box-shadow: -2px 2px 10px #111;
     padding: 1.5em;
     text-align: center;
     border-radius: .5em;

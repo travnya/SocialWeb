@@ -1,5 +1,5 @@
 import { useState } from "react"
-import DetailMessages from "./HiddenMenu/DetailMessages"
+import DetailMessages from "./DetailMessages/DetailMessages"
 import { MessageAuthorImage, MessageItem, MessageList } from "./Messages.styles"
 
 const Messages = () => {
@@ -15,10 +15,7 @@ const Messages = () => {
 
     const [messages, setMessage] = useState([
         createMessage('Александр Иванов', "Привет, как твои дела?", 0),
-        createMessage('Кто-то', "Привет, как твои дела?", 1),
-        createMessage('Кто-то', "Привет, как твои дела?", 2),
-        createMessage('Кто-то', "Привет, как твои дела?", 3),
-        createMessage('Кто-то', "Привет, как твои дела?", 4)
+        createMessage('Кто-то', "Олололо", 1)
     ])
 
     const [active, setActive] = useState(false)

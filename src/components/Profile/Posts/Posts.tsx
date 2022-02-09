@@ -16,7 +16,7 @@ const Posts = () => {
     }
 
     const [posts, setPost] = useState([
-        createPost('Я тут новенький)', 0)
+        createPost('Ололо, я дурачок', 0)
     ])
 
     const addPost = (text: string) => {
