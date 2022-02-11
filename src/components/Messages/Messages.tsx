@@ -1,6 +1,7 @@
 import { useState } from "react"
 import DetailMessages from "./DetailMessages/DetailMessages"
 import { MessageAuthorImage, MessageItem, MessageList } from "./Messages.styles"
+import Head from 'next/head'
 
 const Messages = () => {
 
@@ -13,30 +14,37 @@ const Messages = () => {
         }
     }
 
-    const [messages, setMessage] = useState([
+    const [messages] = useState([
         createMessage('Александр Иванов', "Привет, как твои дела?", 0),
-        createMessage('Кто-то', "Олололо", 1)
+        createMessage('Кто-то', "Олололо", 1),
+        createMessage('Кто-то', "Олололо", 2),
+        createMessage('Кто-то', "Олололо", 3),
+        createMessage('Кто-то', "Олололо", 4)
     ])
 
     const [active, setActive] = useState(false)
 
-    if (active) {
-        return <DetailMessages />
-    } 
-    else {
+    const renderMessage = () => {
         return (
-            <MessageList >
-                {messages.map((message) => (
-                    <MessageItem key={message.id}
-                        onClick={() => setActive(!active)}>
-                        <MessageAuthorImage src={message.Avatar}/>
-                        <h5>{message.Author}</h5>
-                        <p>{message.Message}</p>
-                    </MessageItem>
-                ))}
-            </MessageList>
+            <>
+                <Head>
+                    <title>Сообщения</title>
+                </Head>
+                <MessageList >
+                    {messages.map((message) => (
+                        <MessageItem key={message.id}
+                            onClick={() => setActive(!active)}>
+                            <MessageAuthorImage src={message.Avatar}/>
+                            <h5>{message.Author}</h5>
+                            <p>{message.Message}</p>
+                        </MessageItem>
+                    ))}
+                </MessageList>
+            </>
         )
     }
+
+    return renderMessage() 
 }
 
 export default Messages

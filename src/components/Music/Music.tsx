@@ -1,8 +1,13 @@
+import Head from "next/head"
+
 const Music = () => {
     return (
-        <div>
+        <>
+            <Head>
+                <title>Музыка</title>
+            </Head>
             <h1>В разработке...</h1>
-        </div>
+        </>
     )
 }
 

@@ -1,16 +1,14 @@
 import { MenuButton, NavLink, NavMenu, SidebarWrapper } from "./Sidebar.styles"
+import Link from "next/link"
+import navigation from "../../navigation"
 
 const Sidebar = ():JSX.Element => {
     return (
         <SidebarWrapper>
             <NavMenu>
-                <NavLink href='/profile'><MenuButton className='btn btn-outline-light btn-1'>Профиль</MenuButton></NavLink>
-                <NavLink href='/feed'><MenuButton className='btn btn-outline-light btn-1'>Новости</MenuButton></NavLink>
-                <NavLink href='/messages'><MenuButton className='btn btn-outline-light btn-1'>Сообщения</MenuButton></NavLink>
-                <NavLink href='/friends'><MenuButton className='btn btn-outline-light btn-1'>Друзья</MenuButton></NavLink>
-                <NavLink href='/music'><MenuButton className='btn btn-outline-light btn-1'>Музыка</MenuButton></NavLink>
-                <NavLink href='/videos'><MenuButton className='btn btn-outline-light btn-1'>Видеозаписи</MenuButton></NavLink>
-                <NavLink href='/settings'><MenuButton className='btn btn-outline-light btn-1'>Настройки</MenuButton></NavLink>
+                {navigation.map(({ id, title, path}) => (
+                    <Link key={id} href={path}><NavLink ><MenuButton className='btn btn-outline-light btn-1'>{title}</MenuButton></NavLink></Link>
+                ))}
             </NavMenu>
         </SidebarWrapper>
     )

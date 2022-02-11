@@ -4,7 +4,8 @@ export const MessageList = styled.div`
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 0;
-    height: 30em;
+    height: 20em;
+    padding: .5em .75em .5em .5em;
     ::-webkit-scrollbar {
         width: .5em;
     }

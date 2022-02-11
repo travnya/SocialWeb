@@ -1,7 +1,8 @@
 import { useState } from "react"
+import { getHeapStatistics } from "v8"
 import { MainWrapper, TableHeader, TableBody, BottomBorder, Messages } from "./DetailMessages.styles"
 
-const DetailMessages = () => {
+const DetailMessages = (status: any) => {
 
     const [messages] = useState([
         'Привет, как твои дела?',

@@ -1,8 +1,14 @@
+import Head from "next/head"
+
 const Videos = () => {
     return (
-        <div>
+        <>
+            <Head>
+                <title>Видеозаписи</title>
+            </Head>
+            
             <h1>В разработке...</h1>
-        </div>
+        </>
     )
 }
 

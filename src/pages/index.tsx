@@ -1,7 +1,9 @@
+import App from "../components/App/App"
+
 const Home = (): JSX.Element => {
   return (
     <div>
-      Страница регистрации
+      <App />
     </div>
   )
 }

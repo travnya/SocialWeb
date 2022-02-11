@@ -1,8 +1,14 @@
+import Head from "next/head"
+
 const Settings = () => {
     return (
-        <div>
+        <>
+            <Head>
+                <title>Настройки</title>
+            </Head>
+            
             <h1>В разработке...</h1>
-        </div>
+        </>
     )
 }
 

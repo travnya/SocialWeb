@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 export const PostWrapper = styled.div `
-    width: 1em;
+    width: 21em;
     grid-row: 2;
     grid-column: 1;
     h5 {

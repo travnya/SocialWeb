@@ -1,13 +1,16 @@
-import {Link, MainWrapper} from "./Header.styles"
+import {SLink, MainWrapper} from "./Header.styles"
+import Link from 'next/link'
 
 const Header = () => {
 
     return (
             <MainWrapper>
-                <Link href='/profile'>
-                    <img src='./amoeba.png' />
-                        <h1>Amöba</h1>
-                    <img src='./amoeba.png' />
+                <Link href='/feed'>
+                    <SLink>
+                        <img src='/amoeba.png' />
+                            <h1>Amöba</h1>
+                        <img src='/amoeba.png' />
+                    </SLink>
                 </Link>
             </MainWrapper>
     )
