@@ -1,11 +1,8 @@
-import App from "../components/App/App"
-
-const Home = (): JSX.Element => {
-  return (
-    <div>
-      <App />
-    </div>
-  )
+const main = () => {
+    return (
+        <>
+        </>
+    )
 }
-  
-  export default Home
+
+export default main

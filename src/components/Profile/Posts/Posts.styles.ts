@@ -1,7 +1,8 @@
 import styled from "@emotion/styled"
 
 export const PostWrapper = styled.div `
-    width: 21em;
+    width: 25em;
+    margin: 0 auto;
     grid-row: 2;
     grid-column: 1;
     h5 {
@@ -24,7 +25,7 @@ export const Item = styled.div`
     grid-template-rows: 3em 1fr;
     grid-gap: .5em;
     padding: .5em .5em 0 .5em;
-    width: 20em;
+    width: 24em;
     height: fit-content;
     transition: .5s;
     overflow-wrap: break-word;

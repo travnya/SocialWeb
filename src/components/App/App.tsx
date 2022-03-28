@@ -1,8 +1,21 @@
-import { ContentWrapper } from "./App.styles"
+import Header from "../Header/Header"
+import { ContentWrapper, HeaderWrapper, RegWrapper } from "./App.styles"
 
-const App = ():JSX.Element => {
+const App = () => {
+
+
     return (
-        <div>Первая страница, которую увидит пользователь</div>
+        <ContentWrapper>
+            <HeaderWrapper>
+                <Header />
+            </HeaderWrapper>
+            <RegWrapper>
+                <button 
+                    className="btn btn-dark">
+                    Пройти регистрацию
+                </button>
+            </RegWrapper>
+        </ContentWrapper>
     )
 }
 

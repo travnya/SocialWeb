@@ -44,7 +44,8 @@ const Posts = () => {
                         type='button'
                         className="btn btn-outline-danger"
                         title="Удалить пост"
-                        onClick={() => deletePost(userPost.id)} />
+                        onClick={() => deletePost(userPost.id)} >
+                        </DeleteButton>
                 </Item>
             ))}
         </PostWrapper>
